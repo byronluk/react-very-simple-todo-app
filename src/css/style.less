@@ -1,1 +1,223 @@
-
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: #136a8a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #b3e6eb, #6281c9);
+  background: linear-gradient(to left, #b3e6eb, #6281c9);
+  box-sizing: border-box;
+  font-family: 'Kavivanar', cursive;
+  padding: 0 30px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.head-container {
+  width: 100%;
+  margin-bottom: 15px;
+  color: #f8f1ec;
+}
+.header {
+  font-size: 38px;
+  margin: 12px 0;
+}
+.description {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 5px;
+}
+.add-todo-form {
+  width: 35%;
+  height: 350px;
+  margin-left: 5px;
+  margin-right: 20px;
+  border-radius: 8px;
+  background: linear-gradient(to right, white, #eeebe6);
+  box-shadow: 2px 2px 5px 2px #979290;
+}
+.add-todo-title {
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+  width: 97%;
+  height: 35px;
+  margin-top: 0;
+  padding: 10px 0 0 3%;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 2px double #3d3d42;
+}
+.create-text-label {
+  display: block;
+  padding-left: 3%;
+}
+.create-todo-text {
+  width: 90%;
+  height: 70px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  margin-right: 10%;
+  margin-top: 5px;
+  padding: 5px;
+  resize: none;
+}
+.create-priority-label {
+  display: block;
+  margin-top: 10px;
+  padding-left: 3%;
+}
+.create-todo-priority {
+  width: 70%;
+  height: 35px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  border-radius: 4px;
+  border-color: rgba(206, 205, 205, 0.726);
+  margin: 5px 30% 10px 0;
+  padding-left: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.create-todo {
+  display: block;
+  width: 60%;
+  height: 30px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #aec3f3;
+  border-radius: 6px;
+  border: 1px solid #96a7ce;
+  margin: 10px 20% 10px 4%;
+  outline: none;
+  cursor: pointer;
+}
+.view-todo-section {
+  width: 60%;
+  height: auto;
+  background-color: #f3efea;
+  box-shadow: 2px 2px 6px 2px #808083;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.view-todo-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #ffffff, #dadada);
+  width: 97%;
+  height: 35px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 2.5px solid #808083;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 10px 0 0 3%;
+}
+.no-items {
+  padding: 5px 15px 0 15px;
+  margin-left: 20px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 3px 2px #e9e9e9;
+  background-color: #504e4e;
+  color: #fff8f4;
+  width: 45%;
+  height: 100px;
+}
+.welcome-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.get-started {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.todo-items {
+  list-style-type: none;
+  margin: 0 0 15px 0;
+  padding-left: 20px;
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+}
+.todo-item {
+  width: 95%;
+  margin-bottom: 0px;
+  padding: 2.5px 0 2.5px 5px;
+  border-radius: 2px;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.747);
+  border-top: 1px solid rgba(192, 192, 192, 0.747);
+}
+.list-text {
+  display: inline-block;
+  width: 91%;
+}
+.edit-todo {
+  cursor: pointer;
+  margin: 0 3px;
+}
+.edit-todo:hover {
+  color: #2e8826;
+}
+.delete-todo {
+  cursor: pointer;
+  margin: 0 2px;
+}
+.delete-todo:hover {
+  color: #ad4a4a;
+}
+.priority-1 {
+  background-color: rgba(139, 194, 88, 0.61);
+}
+.priority-2 {
+  background-color: rgba(233, 233, 119, 0.719);
+}
+.priority-3 {
+  background-color: rgba(219, 110, 110, 0.781);
+}
+.update-todo-form {
+  width: 90%;
+  height: 120px;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 0;
+  padding-bottom: 12px;
+  font-family: 'Kavivanar', cursive;
+}
+.update-text-label {
+  width: 50%;
+  height: 120px;
+}
+.update-todo-text {
+  display: block;
+  resize: none;
+  width: 90%;
+  height: 75px;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 2px;
+  border: 0.5px solid rgba(207, 207, 207, 0.767);
+  box-shadow: inset 0 0 4px 1px rgba(175, 174, 174, 0.753);
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+.update-priority-label {
+  width: 50%;
+}
+.update-todo-priority {
+  display: block;
+  width: 90%;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 5%;
+  padding: 2px;
+  border-radius: 2px;
+  border: 1px solid rgba(201, 201, 201, 0.63);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+.update-todo {
+  width: 45%;
+  height: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  background-color: rgba(177, 238, 177, 0.658);
+  border-radius: 4px;
+  border: 1px solid rgba(163, 219, 163, 0.658);
+  cursor: pointer;
+}
