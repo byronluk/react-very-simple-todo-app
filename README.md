@@ -9,7 +9,7 @@ npm install
 ```
 ```
 npm run build
-for styling: :: npm run less ::
+for styling: npm run less
 ```
 ```
 npm start
