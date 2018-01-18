@@ -30,7 +30,7 @@ class SelectPriority extends Component {
           <option value='0'>Select a Priority</option>
           <option value='1'>Low Priority</option>
           <option value='2'>Medium Priority</option>
-          <option className='options' value='3'>High Priority</option>
+          <option value='3'>High Priority</option>
         </select>
       </label>
     );
@@ -63,7 +63,7 @@ class AddTodoSection extends Component {
 class UpdateTodo extends Component {
   render() {
     return (
-      <label htmlFor='update-todo-text'>
+      <label htmlFor='update-todo-text' className='update-text-label'>
         Description
         <textarea
           className='update-todo-text'
@@ -79,7 +79,7 @@ class UpdateTodo extends Component {
 class UpdatePriority extends Component {
   render() {
     return (
-      <label htmlFor='update-todo-priority'>
+      <label htmlFor='update-todo-priority' className='update-priority-label'>
         Priority
         <select
           className='update-todo-priority'
@@ -220,10 +220,7 @@ class App extends Component {
         id: null,
         editEnabled: false,
       },
-      todoItems: [{editEnabled:false,id:0,priority:3,text:"buy bananas"},
-      {editEnabled:false,id:1,priority:3, text:"eat potatoes"},
-      {editEnabled: false, id: 2, priority: 3, text: "find a meetup"},
-      {editEnabled:false,id:3,priority:3,text:"make friends"}],
+      todoItems: [],
     };
     this.onInputChange = this.onInputChange.bind(this);
     this.onNewTodo = this.onNewTodo.bind(this);
