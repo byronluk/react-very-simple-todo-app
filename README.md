@@ -16,3 +16,4 @@ npm start
 ```
 ### Upcoming
 * Finish up styling
+* add in media queries for large screens and tablets and phone screens

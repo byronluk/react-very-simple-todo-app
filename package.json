@@ -4,7 +4,7 @@
   "description": "REACT100 Assignment - VSTDA",
   "main": "server/index.js",
   "scripts": {
-    "build": "webpack -w",
+    "build": "webpack",
     "start": "node server/index.js",
     "less": "lessc src/css/style.less dist/css/style.css",
     "lint": "eslint .",
@@ -53,7 +53,8 @@
     "react-addons-test-utils": "^15.6.0",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0",
-    "url-loader": "^0.5.9"
+    "url-loader": "^0.5.9",
+    "electron": "^1.8.2-beta.4"
   },
   "repository": {
     "type": "git",
